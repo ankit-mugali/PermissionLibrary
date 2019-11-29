@@ -22,6 +22,7 @@ ArrayList<String> permissions = new ArrayList<>();
             e.printStackTrace();
         }
     }
+    
 Just add as many as permission you want in abpve array and in your manifest file.
 
     @Override
@@ -43,3 +44,12 @@ Just add as many as permission you want in abpve array and in your manifest file
             }
         }
     }
+
+To use common functionalty in many activity you can use below code,
+
+CGlobal_lib.getInstance(MainActivity.this).showMessage(getResources().getString(R.string.somthingwentwrong));
+
+CGlobal_lib is a singltone class which you can use to minimize boilerplate code from app. Like showMessage() method you can cretae any common method in CGlobal_lib class and use that by calling like above.
+
+
+
