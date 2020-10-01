@@ -1,4 +1,4 @@
-# PermissionLibrary
+# PermissionLibrary usefull 
 This library is for getting the permission from user to run the android feature in app and minimizing boilerplate code by using Singletone class in app.
 
 To use this library you have to download and add in your current project and in Main/Permission activity have to implement PermissionResultcallback and OnRequestPermissionsResultCallback and import there respective method.
